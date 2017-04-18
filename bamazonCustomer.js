@@ -36,8 +36,8 @@ function askUserQuantity(chosenItem) {
             var queryString = "update products set stock_quantity=" + newStock + " where item_id=" + chosenItem.item_id;
             connection.query(queryString);
             console.log(bigLine + "\nORDER CONFIRMATION" + bigLine);
-            console.log("Item Name  |  Price Each  ×  Order Quantity  =  Your Total" + smallLine);
-            console.log(chosenItem.product_name + "  |  " + itemPricePretty + "  ×  " + chosenQuantity + "  =  " + totalPricePretty);
+            console.log("Item Name  |  Price Each  x  Order Quantity  =  Your Total" + smallLine);
+            console.log(chosenItem.product_name + "  |  " + itemPricePretty + "  x  " + chosenQuantity + "  =  " + totalPricePretty);
             console.log("\nThank you for your business!\nOur " + chosenItem.department_name + " Department will prepare and ship your order right away.");
     connection.end();
 

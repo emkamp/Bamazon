@@ -1,19 +1,3 @@
-/*
-### Challenge #2: Manager View (Next Level)
-x Create a new Node application called `bamazonManager.js`. Running this application will:
-
-  x List a set of menu options:
-    x View Products for Sale
-    x View Low Inventory
-    x Add to Inventory
-    x Add New Product
-
-  x If a manager selects `View Products for Sale`, the app should list every available item: the item IDs, names, prices, and quantities.
-  x If a manager selects `View Low Inventory`, then it should list all items with a inventory count lower than five.
-  * If a manager selects `Add to Inventory`, your app should display a prompt that will let the manager "add more" of any item currently in the store.
-  * If a manager selects `Add New Product`, it should allow the manager to add a completely new product to the store.
-*/
-
 var mysql = require('mysql');
 var inquirer = require('inquirer');
 var currencyFormatter = require('currency-formatter');
@@ -77,10 +61,9 @@ function addInventory() {
             type: "text",
             message: "Enter the ID of the item you wish to edit"
         }]).then(function (results) {
-
-            var stockId = parseInt(results.itemSelect, 10) - 1;
-            var stockCurrent = res[stockId].stock_quantity;
-            var stockItem = res[stockId].product_name;
+            var stockId = parseInt(results.itemSelect, 10);
+            var stockCurrent = res[stockId-1].stock_quantity;
+            var stockItem = res[stockId-1].product_name;
             console.log("You selected: " + stockId + " | " + stockItem);
             console.log(smallLine);
 
