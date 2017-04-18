@@ -6,7 +6,7 @@ On running the bamazoncustomer.js file, the user is presented with a complete li
 
 ![screenshot1](/screenshots/customerview-01-purchase.PNG)
 
-The user is prompter to select one item from the inventory, then prompted for the quantity.  If the user enters a quantity greater than the available stock, they get an error message and are re-prompted for the quantity.  If they enter a useable number, they see an order confirmation.
+The user is prompted to select one item from the inventory, then prompted for the quantity.  If the user enters a quantity greater than the available stock, they get an error message and are re-prompted for the quantity.  If they enter a useable number, they see an order confirmation.
 
 ![screenshot2](/screenshots/customerview-02-stockchange.PNG)
 
