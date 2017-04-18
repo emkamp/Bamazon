@@ -57,3 +57,15 @@ After the user enters their new product, they see a confirmation message and are
 This option simply ends the database connection, returning the user to the command line.
 
 ![screenshot2](/screenshots/managerview-07-quit.PNG)
+
+#To-Do List
+
+Improvement ideas:
+
+- error handling
+	- what if manager enters a negative number which would take inventory stock below 0?
+	- what if manager enters a new inventory item incorrectly?
+	- what if user selects item ID that does not exist?
+
+- final challenge: Supervisor View
+- front end using express or handlebars
