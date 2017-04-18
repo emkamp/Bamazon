@@ -58,7 +58,7 @@ This option simply ends the database connection, returning the user to the comma
 
 ![screenshot2](/screenshots/managerview-07-quit.PNG)
 
-#To-Do List
+# To-Do List
 
 Improvement ideas:
 
