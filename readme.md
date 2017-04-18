@@ -26,7 +26,7 @@ This option shows a list of everything in the database, with visual formatting a
 
 ### View Low Inventory
 
-This option displays only those items which have fewer than 5 each in stock.  It is similar to View Current inventory in that it is display-only, has the same formatting, and immediately gives the user back to the main menu.
+This option displays only those items which have fewer than 5 each in stock.  It is similar to **View Current Inventory** in that it is display-only, has the same formatting, and immediately gives the user back to the main menu.
 
 ![screenshot2](/screenshots/managerview-03-lowinventoryview.PNG)
 
@@ -38,11 +38,11 @@ A short confirmation message shows the user which item they have selected, then 
 
 ![screenshot2](/screenshots/managerview-04-addinventory.PNG)
 
-Then, the user is presented with the main menu.  If the user then selects *View Current Inventory*, they will see that the database has been updated. You can't have too many 1973 Ford Falcon XB's :police_car:
+Then, the user is presented with the main menu.  If the user then selects **View Current Inventory**, they will see that the database has been updated. You can't have too many 1973 Ford Falcon XB's :police_car:
 
 ### Add New Product
 
-On selecting this option, the user is given instructions on how to enter data for a new inventory item.  It is different from *Add to Inventory* in that rather than adding stock quantity to an existing inventory item, this will add an entirely new row in the database table for a new item.  ID is not available for the user to enter, as it is auto-incremented by MySQL. 
+On selecting this option, the user is given instructions on how to enter data for a new inventory item.  It is different from **Add to Inventory** in that rather than adding stock quantity to an existing inventory item, this will add an entirely new row in the database table for a new item.  ID is not available for the user to enter, as it is auto-incremented by MySQL. 
 
 ![screenshot2](/screenshots/managerview-05-addnew.PNG)
 
@@ -50,7 +50,7 @@ The Javascript will trim any leading or trailing spaces, and split the string in
 
 ![screenshot2](/screenshots/managerview-06-addnewdone.PNG)
 
-After the user enters their new product, they see a confirmation message and are again presented with the main menu.  If the user then selects *View Current Inventory*, the new item will be displayed in the list.
+After the user enters their new product, they see a confirmation message and are again presented with the main menu.  If the user then selects **View Current Inventory**, the new item will be displayed in the list.
 
 ### Quit
 
